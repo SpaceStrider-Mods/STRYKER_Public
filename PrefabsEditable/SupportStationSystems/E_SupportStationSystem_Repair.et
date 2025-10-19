@@ -1,0 +1,31 @@
+GenericEntity : "{1D7174C97DF571DC}PrefabsEditable/SupportStationSystems/E_SupportStationSystem_Base.et" {
+ ID "5B2AD5B9801EB74E"
+ components {
+  SCR_ArsenalComponent "{62E49621E34C5C95}" {
+   m_OverwriteArsenalConfig SCR_ArsenalItemListConfig "{62E496210FD844DE}" {
+    m_aArsenalItems {
+     SCR_ArsenalItemStandalone "{655556CD639EBA52}" {
+      m_eItemType VEHICLE
+      m_eItemMode AMMUNITION
+      m_ItemResourceName "{7F81D339B5730DC8}Prefabs/Weapons/Magazines/Magazine_MGS_APFSDS.et"
+     }
+     SCR_ArsenalItemStandalone "{655556CD698CE578}" {
+      m_eItemType VEHICLE
+      m_eItemMode AMMUNITION
+      m_ItemResourceName "{DB65BE3D78FA67F9}Prefabs/Weapons/Magazines/Magazine_MGS_HEATFS.et"
+     }
+     SCR_ArsenalItemStandalone "{655556CD498B6428}" {
+      m_eItemType VEHICLE
+      m_eItemMode AMMUNITION
+      m_ItemResourceName "{D67C285F488B62B1}Prefabs/Weapons/Magazines/Magazine_Dragoon_APFSDS.et"
+     }
+     SCR_ArsenalItemStandalone "{655556CD48CA820F}" {
+      m_eItemType VEHICLE
+      m_eItemMode AMMUNITION
+      m_ItemResourceName "{07865CD345822E72}Prefabs/Weapons/Magazines/Magazine_Dragoon_HEI.et"
+     }
+    }
+   }
+  }
+ }
+}

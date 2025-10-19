@@ -1,0 +1,9 @@
+Projectile : "{55C7FB182B04C654}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_M6.et" {
+ ID "DA5C6308000CDEF2"
+ components {
+  TimerTriggerComponent "{62EC37ED708C1AAB}" {
+   TIMER 1.1
+  }
+ }
+ coords 44.375 1 1217.637
+}

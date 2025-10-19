@@ -1,0 +1,13 @@
+GenericEntity : "{3743DAA2C1072117}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{64621AE914E13B60}" {
+     SourceMaterial "STYKER_base_Wheels"
+     AssignedMaterial "{6DC0C3AB1E4244EB}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_Wheels_Tan.emat"
+    }
+   }
+  }
+ }
+}

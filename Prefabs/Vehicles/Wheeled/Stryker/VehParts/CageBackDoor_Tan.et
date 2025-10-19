@@ -1,0 +1,14 @@
+GenericEntity : "{78AC7C2B48EE9137}Prefabs/Vehicles/Wheeled/Stryker/VehParts/CageBackDoor.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{63293C76FE7ADB91}" {
+     SourceMaterial "Cage"
+     AssignedMaterial "{E010E6D801B75281}Assets/Vehicles/Wheeled/SPC_Stryker/Cage/data/Cage_Tan.emat"
+    }
+   }
+  }
+ }
+ coords 1490.896 39 2832.662
+}

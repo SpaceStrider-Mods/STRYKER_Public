@@ -1,0 +1,21 @@
+Turret : "{72AD3D7B02F0F450}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Turrets/STRYKER_CROWS_Turret.et" {
+ ID "51ACD0965653D003"
+ components {
+  TurretComponent "{5B24B3A9B2859837}" {
+   components {
+    SCR_2DSightsComponent "{5B24B3A9B2859831}" {
+     SightsPosition PointInfo "{5B24B3A9B2859832}" {
+      Angles -0.35 0 0
+     }
+    }
+   }
+  }
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   AttachType InventoryStorageSlot "{0AACE7470E421D82}" {
+    Offset -0.1401 -0.2167 0.0891
+   }
+   WeaponTemplate "{CACD32CD0BC64B41}Prefabs/Weapons/HeavyWeapons/MK19/HMG_Mk19_CROWS.et"
+  }
+ }
+ coords 93.309 1 1236.668
+}

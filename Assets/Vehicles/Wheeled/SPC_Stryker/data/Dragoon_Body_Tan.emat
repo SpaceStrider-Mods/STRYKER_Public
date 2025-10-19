@@ -1,0 +1,5 @@
+MatPBRMulti : "{ACE1DEE0706A9C0D}Assets/Vehicles/Wheeled/SPC_Stryker/data/Dragoon_Body.emat" {
+ MudColor 0.134 0.108 0.077 1
+ Color_2 0.134 0.108 0.077 1
+ Color_1 0.134 0.108 0.077 1
+}

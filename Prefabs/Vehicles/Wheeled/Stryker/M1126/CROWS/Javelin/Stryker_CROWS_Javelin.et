@@ -1,0 +1,63 @@
+Vehicle : "{E3DD72FD06BA2320}Prefabs/Vehicles/Wheeled/Stryker/M1126/CROWS/Stryker_CROWS.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#SPC-Vehicle_M1126_Name - #SPC-Weapon_M2HB #SPC-Weapon_FGM147"
+    m_Image "{A509E401D0030BD4}UI/Textures/EditorPreviews/Vehicles/Wheeled/Stryker/Stryker_CROWS_J.edds"
+   }
+  }
+  WCS_Armament_VehicleCameraComponent "{62F6E1F00D6509B1}" {
+   m_Cameras {
+    WCS_VehicleCameraProps "{62F6E1F0306F98FC}" {
+    }
+    WCS_VehicleCameraProps "{62F6E1F030C2A18B}" {
+    }
+    WCS_VehicleCameraProps "{62F6E1F030B7B488}" {
+    }
+    WCS_VehicleCameraProps "{62F6E1F0335709DF}" {
+    }
+    WCS_VehicleCameraProps "{62F6E1F033493E1C}" {
+    }
+    WCS_VehicleCameraProps "{62F6E1F0336239D1}" {
+    }
+    WCS_VehicleCameraProps "{62F6E1F033194488}" {
+    }
+    WCS_VehicleCameraProps "{62F6E1F033324244}" {
+    }
+    WCS_VehicleCameraProps "{62F6E1F033D5FC6A}" {
+    }
+    WCS_VehicleCameraProps "{62F6E1F033CFCC9D}" {
+    }
+    WCS_VehicleCameraProps "{62F6E1F033FBF736}" {
+    }
+    WCS_VehicleCameraProps "{62F6E1F033965980}" {
+    }
+    WCS_VehicleCameraProps "{62F6E1F0338D4CB6}" {
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo CROWS {
+     Prefab "{748F288C50DB7265}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Turrets/Javelin/STRYKER_CROWS_Turret_Javelin.et"
+    }
+    EntitySlotInfo Cage {
+     Prefab "{4388B6130BADE574}Prefabs/Vehicles/Wheeled/Stryker/VehParts/CageFull.et"
+     DisablePhysicsInteraction 1
+    }
+    EntitySlotInfo CageBackDoor {
+     PivotID "v_backRamp"
+     Prefab "{78AC7C2B48EE9137}Prefabs/Vehicles/Wheeled/Stryker/VehParts/CageBackDoor.et"
+     DisablePhysicsInteraction 1
+    }
+    EntitySlotInfo CageBackDoor_02 {
+     PivotID "v_backRamp"
+     Prefab "{CADD6A45715E7BCA}Prefabs/Vehicles/Wheeled/Stryker/VehParts/CageBackDoor_02.et"
+     DisablePhysicsInteraction 1
+    }
+   }
+  }
+ }
+ coords 98.653 1 1234.403
+}

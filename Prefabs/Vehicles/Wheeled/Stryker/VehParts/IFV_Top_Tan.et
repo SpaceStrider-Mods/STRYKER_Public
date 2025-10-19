@@ -1,0 +1,14 @@
+GenericEntity : "{40751B34DE63F3CA}Prefabs/Vehicles/Wheeled/Stryker/VehParts/IFV_Top.et" {
+ ID "5B2679F47B40F600"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{62CE576DD2752CBC}" {
+     SourceMaterial "STYKER_base_exterior_Body"
+     AssignedMaterial "{32AE8073E27DB7DA}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_exterior_Body_Tan.emat"
+    }
+   }
+  }
+ }
+ coords 1477.477 38.919 2836.407
+}

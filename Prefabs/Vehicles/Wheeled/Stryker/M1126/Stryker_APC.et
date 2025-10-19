@@ -1,0 +1,550 @@
+Vehicle : "{DDC7044EF2E24467}Prefabs/Vehicles/Wheeled/Stryker/Stryker_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{61B6D725F6142D64}" {
+     EntryPositionInfo PointInfo "{5EE40BA2FCF68DD3}" {
+      Offset 0 0.1234 -4.0608
+     }
+     ExitPositionInfo PointInfo "{5B16A1F3A7D3342E}" {
+      Offset 0.4 0.1234 -4.0608
+     }
+     StanceChangeOnExit Crouch
+    }
+   }
+   CompartmentSlots {
+    PilotCompartmentSlot PilotCompartment {
+    }
+    CargoCompartmentSlot Commander : "{1F65AB7E6CFBCBBF}Prefabs/Vehicles/Wheeled/Stryker/Configs/PassengerR.conf" {
+     CompartmentUniqueName "commander"
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "commander_idle" "RearEntry"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "commander_idle" "driver_idle"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "gunner_idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "backRamp" "gunner_idle"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "5B16A1F3A7D334C4" {
+      PivotID "gunner_idle"
+     }
+     SeatType 4
+     UIInfo SCR_ActionUIInfo "{50870A10CE897250}" {
+      Name "#AR-VehiclePosition_Commander"
+     }
+     BaseCoverage 1
+     ContextName "commander"
+     m_iCompartmentSection 0
+     m_DefaultOccupantData SCR_DefaultOccupantData "{659B78C5D96222BD}" {
+      m_sDefaultOccupantPrefab "{F35F145D4A3F75EF}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_CC.et"
+     }
+     m_fFreelookAimLimitOverrideLeft -160
+     m_fFreelookAimLimitOverrideRight 160
+     m_fFreelookCameraNeckFollowTraverse 1
+    }
+    CargoCompartmentSlot SquadLeader : "{073C255B1E107721}Prefabs/Vehicles/Wheeled/Stryker/Configs/PassengerL.conf" {
+     CompartmentUniqueName "squadleader"
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList + {
+       "squadleader_idle"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "squadleader_idle"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "commander_idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "commander_idle" "RearEntry"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
+      PivotID "commander_idle"
+     }
+     DoorInfoList {
+      2
+     }
+     m_iCompartmentSection 0
+     m_DefaultOccupantData SCR_DefaultOccupantData "{659B78C5D034624F}" {
+      m_sDefaultOccupantPrefab "{E45F1E163F5CA080}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_SL.et"
+     }
+    }
+    CargoCompartmentSlot Passenger_L01 : "{073C255B1E107721}Prefabs/Vehicles/Wheeled/Stryker/Configs/PassengerL.conf" {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "passenger_L_1_idle" "RearEntry"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList +{
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "backRamp" "passenger_L_1_idle"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "5B16A1F3A7D334C4" {
+      PivotID "passenger_L_1_idle"
+     }
+     SeatType 4
+     DoorInfoList {
+      2
+     }
+     BaseCoverage 1
+     m_DefaultOccupantData SCR_DefaultOccupantData "{659B78C5D6CFB495}" {
+      m_sDefaultOccupantPrefab "{5B1996C05B1E51A4}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AR.et"
+     }
+    }
+    CargoCompartmentSlot Passenger_L02 : "{073C255B1E107721}Prefabs/Vehicles/Wheeled/Stryker/Configs/PassengerL.conf" {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "passenger_L_2_idle" "RearEntry"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_L_2_idle"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_L_2_idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "passenger_L_2_idle" "backRamp"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "5B16A1F3A7D334C4" {
+      PivotID "passenger_L_2_idle"
+     }
+     SeatType 4
+     DoorInfoList {
+      2
+     }
+     BaseCoverage 1
+     ContextName "Passenger_L02"
+     m_DefaultOccupantData SCR_DefaultOccupantData "{659B78C5CA4ADB77}" {
+      m_sDefaultOccupantPrefab "{84029128FA6F6BB9}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_GL.et"
+     }
+    }
+    CargoCompartmentSlot Passenger_L03 : "{073C255B1E107721}Prefabs/Vehicles/Wheeled/Stryker/Configs/PassengerL.conf" {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "passenger_L_3_idle" "RearEntry"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_L_3_idle"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_L_3_idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "passenger_L_3_idle" "backRamp"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "5B16A1F3A7D334C4" {
+      PivotID "passenger_L_3_idle"
+     }
+     SeatType 4
+     DoorInfoList {
+      2
+     }
+     BaseCoverage 1
+     ContextName "Passenger_L03"
+     m_DefaultOccupantData SCR_DefaultOccupantData "{659B78C5C0790B2A}" {
+      m_sDefaultOccupantPrefab "{27BF1FF235DD6036}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_LAT.et"
+     }
+    }
+    CargoCompartmentSlot Passenger_L04 : "{073C255B1E107721}Prefabs/Vehicles/Wheeled/Stryker/Configs/PassengerL.conf" {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "passenger_L_4_idle" "RearEntry"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_L_4_idle"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_L_4_idle" "backRamp"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "passenger_L_4_idle"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "5B16A1F3A7D334C4" {
+      PivotID "passenger_L_4_idle"
+     }
+     SeatType 4
+     DoorInfoList {
+      2
+     }
+     BaseCoverage 1
+     ContextName "Passenger_L04"
+     m_DefaultOccupantData SCR_DefaultOccupantData "{659B78C5C511BFDA}" {
+      m_sDefaultOccupantPrefab "{E398E44759DA1A43}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_TL.et"
+     }
+    }
+    CargoCompartmentSlot Passenger_R01 : "{1F65AB7E6CFBCBBF}Prefabs/Vehicles/Wheeled/Stryker/Configs/PassengerR.conf" {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "passenger_R_1_idle" "RearEntry"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList +{
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList +{
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "backRamp" "passenger_R_1_idle"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "5B16A1F3A7D334C4" {
+      PivotID "passenger_R_1_idle"
+     }
+     SeatType 2
+     BaseCoverage 1
+     ContextName "Passenger_R01"
+     m_DefaultOccupantData SCR_DefaultOccupantData "{659B78C5F9B68C78}" {
+      m_sDefaultOccupantPrefab "{5B1996C05B1E51A4}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AR.et"
+     }
+    }
+    CargoCompartmentSlot Passenger_R02 : "{1F65AB7E6CFBCBBF}Prefabs/Vehicles/Wheeled/Stryker/Configs/PassengerR.conf" {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "passenger_R_2_idle" "RearEntry"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_R_2_idle"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_R_2_idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "backRamp" "passenger_R_2_idle"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "5B16A1F3A7D334C4" {
+      PivotID "passenger_R_2_idle"
+     }
+     SeatType 2
+     BaseCoverage 1
+     ContextName "Passenger_R02"
+     m_DefaultOccupantData SCR_DefaultOccupantData "{659B78C5FD88F0FA}" {
+      m_sDefaultOccupantPrefab "{84029128FA6F6BB9}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_GL.et"
+     }
+    }
+    CargoCompartmentSlot Passenger_R03 : "{1F65AB7E6CFBCBBF}Prefabs/Vehicles/Wheeled/Stryker/Configs/PassengerR.conf" {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "passenger_R_3_idle" "RearEntry"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_R_3_idle"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_R_3_idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "backRamp" "passenger_R_3_idle"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "5B16A1F3A7D334C4" {
+      PivotID "passenger_R_3_idle"
+     }
+     SeatType 2
+     BaseCoverage 1
+     ContextName "Passenger_R03"
+     m_DefaultOccupantData SCR_DefaultOccupantData "{659B78C5F4AB04BB}" {
+      m_sDefaultOccupantPrefab "{CD28EE7C5690D3BB}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Ammo.et"
+     }
+    }
+    CargoCompartmentSlot Passenger_R04 : "{1F65AB7E6CFBCBBF}Prefabs/Vehicles/Wheeled/Stryker/Configs/PassengerR.conf" {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "passenger_R_4_idle" "RearEntry"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_R_4_idle"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_R_4_idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "backRamp" "passenger_R_4_idle"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "5B16A1F3A7D334C4" {
+      PivotID "passenger_R_4_idle"
+     }
+     SeatType 2
+     BaseCoverage 1
+     ContextName "Passenger_R04"
+     m_DefaultOccupantData SCR_DefaultOccupantData "{659B78C5E9F7763E}" {
+      m_sDefaultOccupantPrefab "{E398E44759DA1A43}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_TL.et"
+     }
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_Image "{911B947A75595F73}UI/Textures/EditorPreviews/Vehicles/Wheeled/Stryker/Stryker_APC.edds"
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 600
+     }
+    }
+    m_aPassengerEntityBudgetCost {
+     SCR_EntityBudgetValue "{5EAD79DA34C9209E}" {
+      m_BudgetType AI
+      m_Value 8
+     }
+    }
+   }
+  }
+  SCR_FuelManagerComponent "{5622A70CD78A9E2C}" {
+   FuelNodes {
+    SCR_FuelNode "{5622A70CD4036C5A}" {
+     m_fInitialFuelTankState 150
+    }
+    SCR_FuelNode "{5EAD79DA34C91F4F}" {
+     m_fInitialFuelTankState 150
+    }
+   }
+  }
+  SCR_ResourceComponent "{60DC0D1AD39A1674}" {
+   m_aEncapsulators {
+    SCR_ResourceEncapsulator "{60DC0D1AAE669F83}" {
+     m_ContainerQueue SCR_ResourceEncapsulatorContainerQueue "{5DB8993B72033255}" {
+      m_StoragePolicies {
+       SCR_ResourceEncapsulatorStoragePolicyGeneric "{5DB89930672A4D0D}" {
+        m_StorageQueue SCR_ResourceEncapsulatorContainerStorageQueue "{60DC0D1AB83698CC}" {
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo IFV_Top {
+    }
+    EntitySlotInfo SupplyStorage_01 {
+     PivotID "v_body"
+     Offset -0.7962 1.9894 -1.4906
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_02 {
+     PivotID "v_body"
+     Offset -1.2665 1.3186 -1.2587
+     Angles 86.2583 94.6028 180
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_03 {
+     PivotID "v_body"
+     Offset -1.2518 1.4051 -0.9175
+     Angles 3.6107 -180 -90
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_04 {
+     PivotID "v_body"
+     Offset 1.1918 1.3757 -1.5799
+     Angles 62.2955 0 -90
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_05 {
+     PivotID "v_body"
+     Offset 0.0771 1.9948 -0.7663
+     Angles 0 87.3022 0
+     AutoTransform 1
+     MergePhysics 1
+     Prefab "{8C29E423099B0C5A}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_medium_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_06 {
+     PivotID "v_body"
+     Offset -0.7832 1.9786 -0.942
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_07 {
+     PivotID "v_body"
+     Offset 0.0264 2.0536 -1.5044
+     Angles 11.9326 0 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_08 {
+     PivotID "v_body"
+     Offset -0.2028 2.1089 -1.1118
+     Angles 0.8233 0.0199 -0.3984
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_09 {
+     PivotID "v_body"
+     Offset -0.2028 2.0309 -0.7822
+     Angles -6.0107 0 0
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   additionalActions {
+    WCS_Armament_VehicleCameraAction "{62E6216E46DC01D7}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+    }
+    WCS_Armament_VehicleCameraAction "{62E6216E6A49E145}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+    }
+    WCS_Armament_VehicleCameraAction "{62E6216E62716FAB}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+    }
+    WCS_Armament_VehicleCameraAction "{62E6216E6D24FB75}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+    }
+    WCS_Armament_VehicleCameraAction "{62E6216E657E424E}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+     m_aExcludeDefinedCompartmentSections {
+     }
+    }
+    WCS_Armament_VehicleCameraAction "{62E6216E6065D295}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+     m_aExcludeDefinedCompartmentSections {
+     }
+    }
+    WCS_Armament_VehicleCameraAction "{62E6216E6375AFD3}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+     m_aExcludeDefinedCompartmentSections {
+     }
+    }
+    WCS_Armament_VehicleCameraAction "{62E6216E611C67FD}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+     m_aExcludeDefinedCompartmentSections {
+     }
+    }
+    WCS_Armament_VehicleCameraAction "{62E6216E6F2A7BDC}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+     m_aExcludeDefinedCompartmentSections {
+     }
+    }
+    WCS_Armament_VehicleCameraAction "{62E6216E6E3C5BE6}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+     m_aExcludeDefinedCompartmentSections {
+     }
+    }
+    WCS_Armament_VehicleCameraAction "{62E6216E6CD68DD3}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+     m_aExcludeDefinedCompartmentSections {
+     }
+    }
+    WCS_Armament_VehicleCameraAction "{62E6216E68A2ED27}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+     m_aExcludeDefinedCompartmentSections {
+     }
+    }
+    WCS_Armament_VehicleCameraAction "{62E6216E69C606F3}" {
+     m_aDefinedCompartmentSectionsOnly {
+     }
+     m_aExcludeDefinedCompartmentSections {
+     }
+    }
+   }
+  }
+ }
+ coords -12.731 -6.002 -2.957
+}

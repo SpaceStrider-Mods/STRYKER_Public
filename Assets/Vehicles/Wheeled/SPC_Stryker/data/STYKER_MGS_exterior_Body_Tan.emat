@@ -1,0 +1,6 @@
+MatPBRMulti : "{4F2F69C111EFE6E4}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_MGS_exterior_Body.emat" {
+ Color_4 0.134 0.108 0.077 1
+ Color_3 0.134 0.108 0.077 1
+ Color_2 0.134 0.108 0.077 1
+ Color_1 0.134 0.108 0.077 1
+}

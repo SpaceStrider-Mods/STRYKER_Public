@@ -1,0 +1,78 @@
+GenericEntity : "{6E42C85D9FC0CA5D}Prefabs/Weapons/MachineGuns/M60/MG_M60_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Object "{5834630A2187FFA8}Assets/Weapons/MachineGuns/M60D/M60D_body.xob"
+   Materials {
+    MaterialAssignClass "{645E4E80B29B2F46}" {
+     SourceMaterial "M60D_body_3_B9C8F4AB46ECF079"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+  }
+  SCR_MeleeWeaponProperties "{5534C3B6F2351DCF}" {
+   m_fDamage 45
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemAnimationAttributes ItemAnimationAttributes "{5284960E60421307}" {
+     AnimationInstance "{60945F10BF15FC09}anims/workspaces/player/player_main_machinegun.asi"
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    SightsComponent "{BB23A637957CFFF8}" {
+     Enabled 0
+    }
+    MuzzleComponent "{50F64C4591CD7AA6}" {
+     MagazineWell MagazineWellM60D "{5534C3B6F2351D28}" {
+     }
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      Offset 0.0749 -0.0668 -0.7356
+     }
+     MagazineTemplate "{423D78F865E8AF8A}Prefabs/Weapons/Magazines/Box_762x51_M60_500rnd_2Ball_1Tracer.et"
+    }
+    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+     Enabled 0
+    }
+    SCR_2DSightsComponent "{649E62A6A15AE11B}" {
+     Enabled 0
+     SightsPosition PointInfo "{649E62A6A2B8143E}" {
+      PivotID "barrel_muzzle"
+      Offset 0 -2.8 0
+      Angles -0.18 -0.03 0
+     }
+     SightsFOVInfo SCR_SightsZoomFOVInfo "{649E62A6A66575F6}" {
+      m_fBaseZoom 2
+      m_fZoomMax 27
+      m_fStepZoomSize 5
+      m_fInterpolationSpeed 25
+     }
+     SightsPointFront PointInfo "{649E62A6DBF0E1AD}" {
+      PivotID "v_gun_01"
+      Offset 0.7775 0.0143 0.7162
+     }
+     SightsPointRear PointInfo "{649E62A6DCF654D2}" {
+      PivotID "v_gun_01"
+      Offset 0.7775 0.0143 0.6162
+     }
+     m_sReticleTexture "{C6C50326F6FD4397}UI/Textures/Sights/4x20/4x201024_UI.edds"
+     m_sReticleGlowTexture "{C6C50326F6FD4397}UI/Textures/Sights/4x20/4x201024_UI.edds"
+     m_bHasIllumination 1
+     m_fReticleTextureGlowAlpha 0.5
+     m_fMagnification 2.6
+     m_fReticleAngularSize 3.6
+     m_fReticlePortion 0.53711
+     m_fReticleBaseZoom 2.6
+     m_fObjectiveFov 23
+     m_fObjectiveScale 0.77
+     m_fVignetteScale 0.847
+     m_fVignetteMoveSpeed 30
+     m_fMotionBlurScale 0
+    }
+   }
+  }
+ }
+ coords 72.514 1 1250.586
+}
