@@ -1,0 +1,59 @@
+Vehicle : "{A6B0CF93E155D820}Prefabs/Vehicles/Wheeled/Stryker/Stryker_MGS_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{64621AEEEAC138B8}" {
+     SourceMaterial "STYKER_MGS_exterior_Body"
+     AssignedMaterial "{AA999F53A9E12CD3}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_MGS_exterior_Body_Tan.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#SPC-Vehicle_M1128_Name"
+    m_Image "{19DD36CDE53F321C}UI/Textures/EditorPreviews/Vehicles/Wheeled/Stryker/Stryker_MGS_Tan.edds"
+    m_aOccupantFillCompartmentTypes {
+     1
+    }
+    m_aCrewEntityBudgetCost {
+     SCR_EntityBudgetValue "{5EAD79DA34C9209F}" {
+      m_BudgetType AI
+      m_Value 1
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    SCR_WheelSlotInfo Wheel_L01 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_L02 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_L03 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_L04 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_R01 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_R02 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_R03 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_R04 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{4DEA1322C3BACAA6}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Turrets/STRYKER_MGS_Turret_Tan.et"
+    }
+   }
+  }
+ }
+}
