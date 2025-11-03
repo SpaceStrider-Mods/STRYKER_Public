@@ -1,0 +1,13 @@
+GenericEntity : "{1009E63AFB9FABAA}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Turrets/Weapons/Smoke_Stryker_Dragoon.et" {
+ ID "62A8D6FA317E0E04"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{64621AE937DE6AF3}" {
+     SourceMaterial "Dragoon_Body"
+     AssignedMaterial "{7EE3D661E6A3BEAA}Assets/Vehicles/Wheeled/SPC_Stryker/data/Dragoon_Body_Tan.emat"
+    }
+   }
+  }
+ }
+}

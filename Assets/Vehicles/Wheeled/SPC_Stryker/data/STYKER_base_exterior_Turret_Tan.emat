@@ -1,0 +1,5 @@
+MatPBRMulti : "{618F2092B49A6797}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_exterior_Turret.emat" {
+ Color_3 0.292 0.227 0.143 1
+ Color_2 0.292 0.227 0.143 1
+ Color_1 0.292 0.227 0.143 1
+}

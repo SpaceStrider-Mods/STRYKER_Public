@@ -1,0 +1,125 @@
+GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponSoundComponent "{5A8685198A9AEEDD}" {
+   Filenames {
+    "{7FE6B13E1203DACE}Sounds/Weapons/Cannons/Weapons_HeavyWeapons_Cannon_Shot.acp" "{310B4870AE881477}Sounds/Weapons/HeavyWeapons/M242/Weapons_HeavyWeapons_M242_Handling.acp"
+   }
+  }
+  MeshObject "{CFBAA4B701F95D69}" {
+   Object "{8F3E96B21A6A38BA}Assets/Weapons/HeavyWeapons/MGS/STRYKER_MGS_Cannon.xob"
+  }
+  RigidBody "{5C66AD57DA291E2E}" {
+   Mass 1000
+   SimState Collision
+   ModelGeometry 1
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{655556C334D1917C}" {
+     Name "#AR-Weapon_MachineGun_Name"
+     Description "#AR-Weapon_MachineGun_Name"
+     m_MagIndicator SCR_MagazineIndicatorConfiguration "{655556C33DD8A278}" {
+      m_sMagazineLayout "{8A98061335A620E1}UI/layouts/HUD/WeaponInfo/SingleMagazineWidget_RocketPod.layout"
+     }
+    }
+    CustomAttributes {
+     AimingModifierAttributes "{566C7D15A071B88E}" {
+     }
+     ItemMovementSwayAttributes "{58B9009CD03086A9}" {
+     }
+     SCR_RecoilCameraShakeParams "{58DEF2AB0413E346}" {
+     }
+     CharacterModifierAttributes "{5D667A653DFFE3D7}" {
+     }
+     PreviewRenderAttributes "{5D667A653DFFE3D2}" {
+      CameraPreset Left
+      CameraDistanceToItem 2
+      FOV 30
+      AspectRatio 1
+      PreviewModel "{D5D94455841353FF}Assets/Vehicles/Wheeled/LAV25/VehParts/Weapons/M242_LAV25_cannon.xob"
+      AnimationInstance "{C79EA6F6F4EFE7CC}anims/workspaces/player/player_inventory_LMG.asi"
+     }
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{5C6692DD0D3883EE}" {
+     components {
+      CaseEjectingEffectComponent "{60565E6BD7700AE6}" {
+       ParticleEffect "{EF06660D8B900D54}Particles/Weapons/Smoke_Cannon_Larger_Emmiter.ptc"
+       EffectPosition EntitySlotInfo Muzzle {
+        PivotID "Muzzle_01"
+       }
+      }
+      SCR_MuzzleEffectComponent "{5C66E7DAB8F14A94}" {
+       ParticleEffect "{5B5AAD527171AD1B}Particles/Weapon/Muzzle_Base_Large_01.ptc"
+       EffectPosition EntitySlotInfo Flash {
+        PivotID "Muzzle_01"
+        Offset 0 0 0
+       }
+      }
+      SCR_OptimizedMuzzleEffectComponent "{5C66E7D84D562B6F}" {
+       ParticleEffect "{D071B1C92D7AEB7C}Particles/Weapon/Smoke_MGS.ptc"
+       EffectPosition EntitySlotInfo Smoke {
+        PivotID "Muzzle_01"
+       }
+      }
+     }
+     MuzzleEndPositions {
+      PointInfo "{5C6692DD0B57665E}" {
+       PivotID "Muzzle_01"
+      }
+     }
+     ProjectileSpawnPositions {
+      PointInfo "{5C6692DD15F14E94}" {
+       PivotID "Chamber_01"
+      }
+     }
+     FireModes {
+      BaseFireMode "{5C6692DCEB15C575}" {
+       MaxBurst 0
+       MaxSalvo 0
+       RoundsPerMinute 0
+       UIName "Safe"
+      }
+      BaseFireMode "{5C6692DCEB5E96E0}" {
+       MaxBurst -1
+       RoundsPerMinute 8
+       UIName "Single"
+      }
+     }
+     MagazineWell MagazineWellSPC_105MGS "{655617F9BA7F3863}" {
+     }
+     UIInfo MuzzleUIInfo "{5C6692DCA2F7DCEC}" {
+      m_bShowCaliber 1
+      m_sCaliber "#SPC-AmmunitionID_105x617mmR"
+      m_MagIndicator SCR_MagazineIndicatorConfiguration "{655556C1E4A5FB07}" {
+      }
+     }
+     MagazinePosition InventoryStorageSlot MAg {
+     }
+     MagazineTemplate "{7F81D339B5730DC8}Prefabs/Weapons/Magazines/Magazine_MGS_APFSDS.et"
+    }
+    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+     Enabled 1
+     AnimGraph "{5C41727F96285D4E}Assets/Weapons/MachineGuns/workspaces/M249.agr"
+     AnimInstance "{E2DF83DEEE9355A1}Assets/Weapons/HeavyWeapons/workspaces/Cannon_weapon.asi"
+     AlwaysActive 1
+    }
+   }
+   WeaponType Autocannon
+   shouldHandleObstruction 0
+   SoundInt 1030000
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "M68A1E4"
+    m_bShowWeaponName 1
+   }
+  }
+  RplComponent "{E052E71DCB007AF2}" {
+   "Parent Node From Parent Entity" 1
+  }
+ }
+ coords 55.609 1 1196.554
+}

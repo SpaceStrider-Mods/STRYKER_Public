@@ -1,0 +1,40 @@
+Turret : "{72AD3D7B02F0F450}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Turrets/STRYKER_CROWS_Turret.et" {
+ ID "51ACD0965653D003"
+ components {
+  WCS_Armament_LoadoutComponent "{64F059F34AE47869}" {
+   m_ArmamentGroups {
+    WCS_ArmamentSlotGroup "{64F059F370BA0EA8}" {
+    }
+    WCS_ArmamentWeaponGroup "{64F059F372F51049}" {
+     prefab "{F44E301781489297}Prefabs/Weapons/AircraftWeapons/MissilePods/Pod_Javelin_CROWS.et"
+     weaponsInfo {
+      WCS_ArmamentWeaponInfo "{633A37527F74B565}" {
+       Position PointInfo "{633A375272CD018D}" {
+        PivotID "v_turret_01"
+        Offset 0.405 0.47 0
+       }
+      }
+     }
+     fireModes {
+      WCS_Armament_WeaponSingleFireMode "{633A375394FEB4A4}" {
+      }
+     }
+    }
+   }
+   m_sPilotCompartmentUniqueName "commander"
+  }
+  WCS_Armament_VehicleWeaponStationComponent "{64F059F342F50DD6}" {
+  }
+  WeaponSlotComponent "{64F059F465AEC172}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{64F059FB95DF7C07}" {
+    signalsSuffix "Turret"
+   }
+   useAimingType MainTurret
+   shouldHandleObstruction 0
+   obstructionTestCharacterOffset 0 0 0
+   obstructionTestAddedLength 0
+   WeaponTemplate "{52120E4BA120661B}Prefabs/Weapons/Core/Armament_Empty.et"
+   WeaponSlotIndex 1
+  }
+ }
+}

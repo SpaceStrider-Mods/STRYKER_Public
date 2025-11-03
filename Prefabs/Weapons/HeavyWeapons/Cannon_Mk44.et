@@ -1,0 +1,130 @@
+GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponSoundComponent "{5A8685198A9AEEDD}" {
+   Filenames {
+    "{FDBAF947936E1744}Sounds/Weapons/HeavyWeapons/M242/Weapons_HeavyWeapons_M242_Shot.acp" "{310B4870AE881477}Sounds/Weapons/HeavyWeapons/M242/Weapons_HeavyWeapons_M242_Handling.acp"
+   }
+  }
+  MeshObject "{CFBAA4B701F95D69}" {
+   Object "{C75E0D30F08028B3}Assets/Weapons/HeavyWeapons/Dragoon/Dragoon_Cannon.xob"
+  }
+  RigidBody "{655556C64E9CFE48}" {
+   Mass 350
+   SimState Collision
+   ModelGeometry 1
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07E1D123E9}" {
+     Name "Mk44 Bushmaster II"
+     Description ""
+     m_MagIndicator SCR_MagazineIndicatorConfiguration "{655556C771BEE15E}" {
+     }
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5534BB9B9A3E369E}" {
+      CameraPreset Left
+      CameraDistanceToItem 1.9
+     }
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    SightsComponent "{BB23A637957CFFF8}" {
+     SightsPosition PointInfo "{BB23A63796688E69}" {
+      PivotID "eye"
+     }
+    }
+    MuzzleComponent "{50F64C4591CD7AA6}" {
+     components {
+      CaseEjectingEffectComponent "{5122AAD190FCA21D}" {
+       ParticleEffect "{0102B71CE880771A}Particles/Weapon/Casing_25x137.ptc"
+       EffectPosition EntitySlotInfo "{513A938439231378}" {
+        PivotID "barrel_muzzle"
+        Offset 0.07 -0.1039 -2.6
+        Angles 8.3804 4.6894 29.3721
+       }
+       HasSound 0
+      }
+      SCR_MuzzleEffectComponent "{C9B3271BB22CDB68}" {
+       ParticleEffect "{7FF03E344559C477}Particles/Weapon/Muzzle_M242.ptc"
+       EffectPosition EntitySlotInfo "{C9B3271BB85B5D32}" {
+        Offset 0 0 0.0606
+       }
+      }
+      SCR_OptimizedMuzzleEffectComponent "{655556C6034F93EC}" {
+       ParticleEffect "{8CBCADBCD072D380}Particles/Weapon/Smoke_M242.ptc"
+       EffectPosition EntitySlotInfo "{655556C67743783F}" {
+        PivotID "barrel_muzzle"
+       }
+       ResetOnFire 0
+      }
+     }
+     FireModes {
+      BaseFireMode "{B80A64F4A8EF8333}" : "{A512F292D96BCB9F}Prefabs/Weapons/Core/Configs/FireModes/FireMode_Auto.conf" {
+       RoundsPerMinute 100
+       UIName "100RPM"
+      }
+      BaseFireMode "{655556C6FD6F5E67}" : "{A512F292D96BCB9F}Prefabs/Weapons/Core/Configs/FireModes/FireMode_Auto.conf" {
+       MaxBurst -1
+       RoundsPerMinute 200
+       UIName "200RPM"
+      }
+     }
+     MagazineWell MagazineWellSPC_30Drag "{655617F980D99848}" {
+     }
+     WeaponAimModifiers {
+      RecoilWeaponAimModifier "{5CA77AA2B201360F}" {
+       LinearData RecoilData "{5CA77AA2B201360E}" {
+        "Curve X" {
+         0 0.5 1 0.5
+        }
+        "Curve Y" {
+         0 0.5 0.032 0.55 0.045 0.75 0.065 0.7 0.071 0.65 0.095 0.5 0.25 0.45 0.45 0.52 0.7 0.495 1 0.5
+        }
+        "Curve Z" {
+         0 0.5 0.032 0.65 0.045 0.95 0.065 0.95 0.071 0.85 0.095 0.7 0.25 0.35 0.45 0.55 0.7 0.485 1 0.5
+        }
+        "Curve Time Scale" 1
+        "Curve Magnitudes" 1 1 1
+        "Curve Mins" -0.001 -0.006 -0.022
+        "Curve Maxs" 0 -0.005 -0.018
+        "Base Recoil Scale" 3
+        "OneHand Scale" 2
+       }
+      }
+     }
+     UIInfo MuzzleUIInfo "{2FBBA72C906C627E}" {
+      m_bShowCaliber 1
+      m_sCaliber "30×173mm"
+     }
+     ReloadDuration 35
+     AllowWeaponDeployment 0
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      PivotID ""
+     }
+     MagazineTemplate "{D67C285F488B62B1}Prefabs/Weapons/Magazines/Magazine_Dragoon_APFSDS.et"
+    }
+    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+     Enabled 0
+     AnimVariablesToBind {
+      ""
+     }
+    }
+   }
+   shouldHandleObstruction 0
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "Mk44 Bushmaster II"
+    Description ""
+    m_bShowWeaponName 1
+   }
+   CanBeOnSling 0
+  }
+  RplComponent "{E052E71DCB007AF2}" {
+   "Parent Node From Parent Entity" 1
+  }
+ }
+ coords 73.786 1 1249.905
+}

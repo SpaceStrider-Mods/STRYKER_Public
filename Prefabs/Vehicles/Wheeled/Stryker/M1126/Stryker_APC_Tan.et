@@ -1,0 +1,54 @@
+Vehicle : "{249A75FB99B24A57}Prefabs/Vehicles/Wheeled/Stryker/M1126/Stryker_APC.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{63293C76BD2443BC}" {
+     SourceMaterial "STYKER_base_exterior_Body"
+     AssignedMaterial "{32AE8073E27DB7DA}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_exterior_Body_Tan.emat"
+    }
+    MaterialAssignClass "{63293C76BD2443A2}" {
+     SourceMaterial "TTRYKER_Exterior_Tan"
+     AssignedMaterial "{212C497F57348455}Assets/Vehicles/Wheeled/SPC_Stryker/data/TTRYKER_Exterior_Tan.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_Image "{4C8088D792C27BDD}UI/Textures/EditorPreviews/Vehicles/Wheeled/Stryker/Stryker_APC_Tan.edds"
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    SCR_WheelSlotInfo Wheel_L01 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_L02 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_L03 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_L04 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_R01 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_R02 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_R03 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_R04 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    RegisteringComponentSlotInfo IFV_Top {
+     Prefab "{8B64FFD21E92CD86}Prefabs/Vehicles/Wheeled/Stryker/VehParts/IFV_Top_Tan.et"
+    }
+   }
+  }
+ }
+ coords 1477.632 38.895 2842.957
+}

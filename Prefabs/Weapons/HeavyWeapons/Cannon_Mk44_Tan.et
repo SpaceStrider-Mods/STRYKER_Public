@@ -1,0 +1,13 @@
+GenericEntity : "{CF10BAD4FF2B0ED2}Prefabs/Weapons/HeavyWeapons/Cannon_Mk44.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{64621AE9386D110A}" {
+     SourceMaterial "Dragoon_Body"
+     AssignedMaterial "{7EE3D661E6A3BEAA}Assets/Vehicles/Wheeled/SPC_Stryker/data/Dragoon_Body_Tan.emat"
+    }
+   }
+  }
+ }
+}
