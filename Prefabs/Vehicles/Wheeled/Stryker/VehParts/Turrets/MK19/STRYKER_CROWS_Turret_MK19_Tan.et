@@ -1,0 +1,14 @@
+Turret : "{794397777BC5BF68}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Turrets/MK19/STRYKER_CROWS_Turret_MK19.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{64F4572408BF55E8}" {
+     SourceMaterial "STYKER_base_exterior_Turret"
+     AssignedMaterial "{63BFF9BE97A60E7D}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_exterior_Turret_Tan.emat"
+    }
+   }
+  }
+ }
+ coords 93.258 1 1234.188
+}

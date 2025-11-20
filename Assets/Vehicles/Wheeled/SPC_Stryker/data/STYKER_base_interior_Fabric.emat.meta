@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{B926B7944830661F}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_interior_Fabric.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

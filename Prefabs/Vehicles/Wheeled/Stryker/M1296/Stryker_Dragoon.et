@@ -1,0 +1,108 @@
+Vehicle : "{249A75FB99B24A57}Prefabs/Vehicles/Wheeled/Stryker/M1126/Stryker_APC.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  RigidBody "{51DAA09FECF52BBF}" {
+   Mass 18000
+   CenterOfMass 0 1.3 0
+  }
+  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   CompartmentSlots {
+    CargoCompartmentSlot Commander {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "" ""
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "" ""
+      }
+     }
+     m_DefaultOccupantData SCR_DefaultOccupantData "{659B78C5D96222BD}" {
+      m_bEnabled 0
+     }
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#SPC-Vehicle_M1296_Name"
+    m_Image "{FA26FB824B30CF67}UI/Textures/EditorPreviews/Vehicles/Wheeled/Stryker/Stryker_Dragoon.edds"
+    m_aAuthoredLabels {
+     ENTITYTYPE_VEHICLE TRAIT_PASSENGERS_LARGE TRAIT_SUPPLYSTORAGE_SMALL TRAIT_ARMOR CONTENT_MODDED TRAIT_ARMED
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 3350
+     }
+     SCR_EntityBudgetValue "{60DC0D1B4DFD4443}" {
+      m_BudgetType RANK_CAPTAIN
+     }
+    }
+    m_aCrewEntityBudgetCost {
+     SCR_EntityBudgetValue "{5EAD79DA34C9209F}" {
+      m_BudgetType AI
+     }
+    }
+   }
+  }
+  SCR_ResourceComponent "{60DC0D1AD39A1674}" {
+   m_aContainers {
+    SCR_ResourceContainer "{60DC0D1AD59A7D96}" {
+     m_fResourceValueMax 160
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5EAD79DA34C92091}" {
+   MultiSlots {
+    MultiSlotConfiguration "{60565BEFD2C8CADA}" {
+     SlotTemplate LoadoutSlotInfo Ammo {
+      Prefab "{9458584521CCA4E2}Prefabs/Weapons/Magazines/Magazine_M240_Coax/Box_762x51_M240_coax_200rnd_4AP_1Tracer.et"
+     }
+     NumSlots 8
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo IFV_Top {
+     Enabled 0
+    }
+    EntitySlotInfo SupplyStorage_01 {
+     Enabled 0
+    }
+    EntitySlotInfo SupplyStorage_02 {
+    }
+    EntitySlotInfo SupplyStorage_03 {
+    }
+    EntitySlotInfo SupplyStorage_04 {
+    }
+    EntitySlotInfo SupplyStorage_05 {
+     Enabled 0
+    }
+    EntitySlotInfo SupplyStorage_06 {
+     Enabled 0
+    }
+    EntitySlotInfo SupplyStorage_07 {
+     Enabled 0
+    }
+    EntitySlotInfo SupplyStorage_08 {
+     Enabled 0
+    }
+    EntitySlotInfo SupplyStorage_09 {
+     Enabled 0
+    }
+    RegisteringComponentSlotInfo Dragoon_Turret {
+     MergePhysics 1
+     Prefab "{DAA1E2C22905F361}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Turrets/STRYKER_Dragoon_Turret.et"
+     RegisterActions 1
+     RegisterDamage 1
+     RegisterControllers 1
+     RegisterWeapons 1
+     RegisterCompartments 1
+    }
+   }
+  }
+ }
+ coords 55.478 1 1214.566
+}

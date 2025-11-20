@@ -1,0 +1,23 @@
+GenericEntity : "{6CD42085EBC53272}Prefabs/Weapons/HeavyWeapons/MGS_Cannon.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{655556C3A361A5E8}" {
+     SourceMaterial "STYKER_MGS_exterior_Body"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{5C6692DD0D3883EE}" {
+     MagazineWell MagazineWellSPC_105MGSHE "{655617F9BA7F3863}" {
+     }
+     MagazineTemplate "{DB65BE3D78FA67F9}Prefabs/Weapons/Magazines/Magazine_MGS_HEATFS.et"
+    }
+   }
+  }
+ }
+ coords 59.756 1 1197.853
+}

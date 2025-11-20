@@ -1,0 +1,62 @@
+Vehicle : "{126A563BC651CB66}Prefabs/Vehicles/Wheeled/Stryker/M1126/CROWS/MK19/Stryker_CROWS_Cage_MK19.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{64F4572FA33A8372}" {
+     SourceMaterial "STYKER_base_exterior_Body"
+     AssignedMaterial "{32AE8073E27DB7DA}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_exterior_Body_Tan.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_Image "{99736ED90AC97A3B}UI/Textures/EditorPreviews/Vehicles/Wheeled/Stryker/Stryker_APC_CROWS_Cage_MK19_Tan.edds"
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    SCR_WheelSlotInfo Wheel_L01 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_L02 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_L03 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_L04 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_R01 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_R02 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_R03 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    SCR_WheelSlotInfo Wheel_R04 {
+     Prefab "{F6A1B78005B22D55}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Wheels/M1126_wheel_Tan.et"
+    }
+    RegisteringComponentSlotInfo IFV_Top {
+     Prefab "{8B64FFD21E92CD86}Prefabs/Vehicles/Wheeled/Stryker/VehParts/IFV_Top_Tan.et"
+    }
+    RegisteringComponentSlotInfo CROWS {
+     Prefab "{FE0E131936792548}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Turrets/MK19/STRYKER_CROWS_Turret_MK19_Tan.et"
+    }
+    EntitySlotInfo Cage {
+     Prefab "{EA30E496138E966E}Prefabs/Vehicles/Wheeled/Stryker/VehParts/CageFull_Tan.et"
+    }
+    EntitySlotInfo CageBackDoor {
+     Prefab "{CCB71E8759B44A23}Prefabs/Vehicles/Wheeled/Stryker/VehParts/CageBackDoor_Tan.et"
+    }
+    EntitySlotInfo CageBackDoor_02 {
+     Prefab "{011C4CBED5921C2A}Prefabs/Vehicles/Wheeled/Stryker/VehParts/CageBackDoor_02_Tan.et"
+    }
+   }
+  }
+ }
+ coords 100.656 1 1260.365
+}

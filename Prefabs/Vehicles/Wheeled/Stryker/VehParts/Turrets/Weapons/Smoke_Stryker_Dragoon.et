@@ -1,0 +1,283 @@
+GenericEntity : "{2BAC695816860421}Prefabs/Weapons/Core/Armament_Dispenser_Smoke.et" {
+ ID "62A8D6FA317E0E04"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{2EA45689EB59EA5B}Assets/Vehicles/Wheeled/SPC_Stryker/STRYKER_Dragoon_SmokeLauncher.xob"
+  }
+  SCR_DamageManagerComponent "{3EBB276D48AFFF41}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone Dispenser {
+    }
+   }
+  }
+  WCS_Armament_SmokeDispenserComponent "{62DB0A13234C2E8C}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FC84B2}" {
+    PivotID "Barrel_Chamber_01"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FC848E}" {
+    PivotID "Barrel_Muzzle_01"
+    Offset 1.1936 0.8025 -0.0352
+    Angles 15 30 0
+   }
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iId 0
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FC8485}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FC8487}" {
+    PivotID "Barrel_Chamber_03"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FC8499}" {
+    PivotID "Barrel_Muzzle_03"
+    Offset -1.0798 0.8086 0.0027
+    Angles 30 -15 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 1
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FC849A}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF4D10}" {
+    PivotID "Barrel_Chamber_05"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF4D15}" {
+    PivotID "Barrel_Muzzle_05"
+    Offset 1.3079 0.6213 -0.0828
+    Angles 15 55 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 8
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF02CB}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF2537}" {
+    PivotID "Barrel_Chamber_10"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF2539}" {
+    PivotID "Barrel_Muzzle_10"
+    Offset -1.2205 0.6199 -0.0038
+    Angles 15 -35 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 7
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF02CF}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF02CE}" {
+    PivotID "Barrel_Chamber_08"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF02C9}" {
+    PivotID "Barrel_Muzzle_08"
+    Offset 1.0776 0.8099 0.0013
+    Angles 15 15 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 6
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF02D3}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF02D2}" {
+    PivotID "Barrel_Chamber_06"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF02CD}" {
+    PivotID "Barrel_Muzzle_06"
+    Offset -1.1954 0.8138 -0.0288
+    Angles 15 -30 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 13
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF2538}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF253A}" {
+    PivotID "Barrel_Chamber_12"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF253D}" {
+    PivotID "Barrel_Muzzle_12"
+    Offset 1.2273 0.625 0.0062
+    Angles 15 35 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 14
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF253F}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF253E}" {
+    PivotID "Barrel_Chamber_14"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF254B}" {
+    PivotID "Barrel_Muzzle_14"
+    Offset -1.3136 0.6202 -0.082
+    Angles 15 -55 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 15
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF4D1B}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF4D1A}" {
+    PivotID "Barrel_Chamber_07"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF4D18}" {
+    PivotID "Barrel_Muzzle_07"
+    Offset 1.1995 0.7447 -0.0048
+    Angles 15 30 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 9
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF4D1E}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF4DE2}" {
+    PivotID "Barrel_Chamber_09"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF4DE9}" {
+    PivotID "Barrel_Muzzle_06"
+    Offset -1.0873 0.7484 0.0414
+    Angles 15 -15 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 2
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF4DC4}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF4DCB}" {
+    PivotID "Barrel_Chamber_02"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF4DCA}" {
+    PivotID "Barrel_Muzzle_12"
+    Offset 1.3307 0.5622 -0.0597
+    Angles 14.3213 52.6808 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 5
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF4DC8}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF02D6}" {
+    PivotID "Barrel_Chamber_04"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF02D0}" {
+    PivotID "Barrel_Muzzle_14"
+    Offset -1.2407 0.5631 0.0261
+    Angles 15 -35 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 12
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF4DE8}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF4DEF}" {
+    PivotID "Barrel_Chamber_11"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF4DEE}" {
+    PivotID "Barrel_Muzzle_11"
+    Offset 1.0889 0.7474 0.0417
+    Angles 15 15 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 3
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF4DEC}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF4DF0}" {
+    PivotID "Barrel_Chamber_13"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF4DF6}" {
+    PivotID "Barrel_Muzzle_06"
+    Offset -1.2072 0.7451 -0.0035
+    Angles 15 -30 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 10
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF4DF5}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF4DFB}" {
+    PivotID "Barrel_Chamber_15"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF4DFA}" {
+    PivotID "Barrel_Muzzle_12"
+    Offset 1.2387 0.5564 0.024
+    Angles 15 35 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 11
+  }
+  WCS_Armament_SmokeDispenserComponent "{63295DA4D2FF4DF8}" {
+   m_Projectile "{EC6CD14C2702735C}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_Stryker.et"
+   m_IdlePosition PointInfo "{63295DA4D2FF4DC7}" {
+    PivotID "Barrel_Chamber_16"
+   }
+   m_FirePosition PointInfo "{63295DA4D2FF4DC6}" {
+    PivotID "Barrel_Muzzle_14"
+    Offset -1.3377 0.5597 -0.0574
+    Angles 15 -50 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 10
+   m_iShakeAmount 1
+   m_iId 4
+  }
+  ActionsManagerComponent "{62A957B2374C324C}" {
+   ActionContexts {
+    UserActionContext "{62A957B22D79F4B1}" {
+     Radius 0.3
+     Omnidirectional 0
+     VisibilityAngle 75
+    }
+   }
+   additionalActions {
+    WCS_RearmDispenserAtRepairStationAction "{62A957B2FD111201}" {
+     m_fSupplyCostPerProjectile 10
+    }
+   }
+  }
+ }
+ coords 40.065 1 1215.172
+}

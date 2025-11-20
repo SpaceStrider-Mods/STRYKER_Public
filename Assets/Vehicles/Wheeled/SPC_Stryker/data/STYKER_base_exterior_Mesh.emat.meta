@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{61DCD3BA2A069C04}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_exterior_Mesh.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

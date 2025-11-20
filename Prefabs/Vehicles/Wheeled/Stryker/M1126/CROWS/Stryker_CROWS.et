@@ -1,0 +1,94 @@
+Vehicle : "{249A75FB99B24A57}Prefabs/Vehicles/Wheeled/Stryker/M1126/Stryker_APC.et" {
+ ID "0000000000000001"
+ components {
+  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   CompartmentSlots {
+    CargoCompartmentSlot Commander {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "" ""
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "" ""
+      }
+     }
+     m_DefaultOccupantData SCR_DefaultOccupantData "{659B78C5D96222BD}" {
+      m_bEnabled 0
+     }
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#SPC-Vehicle_M1126_Name - #SPC-Weapon_M2HB"
+    m_Image "{9C121754FE325C64}UI/Textures/EditorPreviews/Vehicles/Wheeled/Stryker/Stryker_CROWS.edds"
+    m_aAuthoredLabels + {
+     TRAIT_ARMED
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 1000
+     }
+     SCR_EntityBudgetValue "{60DC0D1B4DFD4443}" {
+      m_BudgetType RANK_SERGEANT
+      m_Value 3
+     }
+    }
+    m_aCrewEntityBudgetCost {
+     SCR_EntityBudgetValue "{5EAD79DA34C9209F}" {
+      m_BudgetType AI
+      m_Value 1
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5EAD79DA34C92091}" {
+   MultiSlots {
+    MultiSlotConfiguration "{60DE236EF75CAE7B}" {
+     SlotTemplate InventoryStorageSlot Ammo {
+      Prefab "{7368DBD1BB3633B8}Prefabs/Weapons/Magazines/Box_127x99_M2_200rnd_4AP_1APIT_inherited.et"
+     }
+     NumSlots 5
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo CROWS {
+     MergePhysics 1
+     Prefab "{72AD3D7B02F0F450}Prefabs/Vehicles/Wheeled/Stryker/VehParts/Turrets/STRYKER_CROWS_Turret.et"
+     DisablePhysicsInteraction 1
+     RegisterActions 1
+     RegisterDamage 1
+     RegisterControllers 1
+     RegisterWeapons 1
+     RegisterCompartments 1
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   additionalActions {
+    WCS_RearmVehicleAtRepairStationAction "{62D8D5C1D95915B2}" {
+     ParentContextList {
+      "RearEntry"
+     }
+     UIInfo SCR_ActionUIInfo "{62D8D5CE82C7138B}" {
+      Name "#WCS-UserAction_RearmVehicle"
+      m_sIconName "update"
+     }
+     "Sort Priority" 59
+     m_aRearmData {
+      WCS_VehicleRearmData "{62D8D5CE0E32A5C6}" {
+       magazine "{7368DBD1BB3633B8}Prefabs/Weapons/Magazines/Box_127x99_M2_200rnd_4AP_1APIT_inherited.et"
+       maxAmount 5
+       unitSupplyCost 15
+      }
+     }
+    }
+   }
+  }
+ }
+ coords -19.748 -6.471 -4.403
+}
